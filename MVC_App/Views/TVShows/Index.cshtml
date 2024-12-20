@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Application_Domain.Models.TVShow>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+@if(!Model.Any())
+{
+    <h2>
+        There is no Items Do you want to add items
+    </h2>
+}
+else
+{
+    <h2>
+        Welcome in TVShow Page
+    </h2>
+}
+
+<br />
+<div class="button_hover">
+    <a asp-action="Create" class="button">Create New</a>
+</div>
+    
+
+<div class="container1">
+    @foreach (var item in Model)
+    {
+       
+        <div class="card mb-3" style="max-width: 540px;">
+
+            <div class="row g-0">
+                 <a asp-action="Details" asp-route-id="@item.TVShowId" >
+                <div class="col-md-4">
+                    <img src="  @item.Attachment_img.Path" class="img-fluid rounded-start" alt="...">
+                </div>
+                </a>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">@item.ReleaseDate</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-g-1">
+                <div class="button_hover"> 
+                <a asp-action="Edit" asp-route-id="@item.TVShowId" class="button">Edit</a>
+                </div>
+             @*    <div class="button_hover">
+                <a asp-action="Details" asp-route-id="@item.TVShowId" class="button">Details</a>
+                </div> *@
+                <div class="button_hover">
+                        <a asp-action="Delete" asp-route-id="@item.TVShowId" class="button">Delete</a>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

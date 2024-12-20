@@ -1,0 +1,22 @@
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.deps.json
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.dll
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.pdb
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.AssemblyInfoInputs.cache
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.AssemblyInfo.cs
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.csproj.CoreCompileInputs.cache
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.dll
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\refint\Application_Domain.dll
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.pdb
+C:\Users\alkay\Desktop\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\ref\Application_Domain.dll
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.deps.json
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.dll
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\bin\Debug\net8.0\Application_Domain.pdb
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.AssemblyInfoInputs.cache
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.AssemblyInfo.cs
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.csproj.CoreCompileInputs.cache
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.dll
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\refint\Application_Domain.dll
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\Application_Domain.pdb
+C:\Users\alkay\Desktop\مجلد جديد\Finall\MVC_App\Application_Domain\obj\Debug\net8.0\ref\Application_Domain.dll

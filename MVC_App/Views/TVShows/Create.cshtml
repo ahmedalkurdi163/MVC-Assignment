@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model Infrastructure.ViewModels.TVShowCreateModel ;
+
+@{
+    ViewData["Title"] = "Create";
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Create</h1>
+
+    <h4>TVShow</h4>
+    <hr />
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Title" class="control-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ReleaseDate" class="control-label"></label>
+            <input asp-for="ReleaseDate" class="form-control" type="date" />
+            <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="Rating" class="control-label"></label>
+            <select asp-for="Rating" class="form-control" asp-items="ViewBag.Ratings"></select>
+            <span asp-validation-for="Rating" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="URL" class="control-label"></label>
+            <input asp-for="URL" class="form-control" />
+            <span asp-validation-for="URL" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="languages" class="control-label">Languages</label>
+            <select asp-for="languages" class="form-control" asp-items="ViewBag.Languages" size="3" multiple="multiple"></select>
+            <span asp-validation-for="languages" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ImageFile" class="control-label"></label>
+            <input asp-for="ImageFile" type="file" class="form-control" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+}
+else
+{
+    <h2> bakc to  <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> </h2>
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

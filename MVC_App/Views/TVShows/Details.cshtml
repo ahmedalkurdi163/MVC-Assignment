@@ -1,0 +1,45 @@
+﻿@using Application_Domain.Models
+@model Application_Domain.Models.TVShow
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>TV Show Details</h1>
+
+<div class="tvshow-details-container">
+    <div class="tvshow-header">
+        <h2>@Model.Title</h2>
+    </div>
+    <div class="tvshow-info">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="@Model.Attachment_img.Path" alt="@Model.Title" class="tvshow-image" />
+            </div>
+            <div class="col-sm-8">
+                <dl class="row">
+                    <dt class="col-sm-4">Release Date</dt>
+                    <dd class="col-sm-8">@Model.ReleaseDate.ToString("MMMM dd, yyyy")</dd>
+                    <dt class="col-sm-4">Languages</dt>
+                    @foreach (var item in @ViewBag.Languages)
+                    {
+                        <dd class="col-sm-8">
+                            @item.Name
+                        </dd>
+                    }
+                    <dt class="col-sm-4">Rating</dt>
+                    <dd class="col-sm-8">@Model.Rating</dd>
+
+                    <dt class="col-sm-4">URL</dt>
+                    <dd class="col-sm-8"><a href="@Model.URL" target="_blank">@Model.URL</a></dd>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="action-links">
+    <a asp-action="Edit" asp-route-id="@Model?.TVShowId" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

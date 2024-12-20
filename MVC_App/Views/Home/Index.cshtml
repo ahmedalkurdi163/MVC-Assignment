@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+ @if (SignInManager.IsSignedIn(User))
+{
+    <div class="text-center">
+@*         @if (User.IsInRole("admin")){
+        <h1 class="display-4">Welcome in our website </h1> 
+        } *@
+        <h1 class="display-4">Welcome in our website Look at our  <a class="nav-link text-dark" asp-area="" asp-controller="TVShows" asp-action="Index">TV Shows</a>        </h1>  
+    </div>
+}
+else
+{@* 
+    <li class="nav-item">
+       
+    </li>
+    <li class="nav-item">
+        
+    </li> *@
+    <h1> Please <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a> or  <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a> to view TV shows.</h1>
+}
